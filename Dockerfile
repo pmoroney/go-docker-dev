@@ -41,7 +41,7 @@ RUN adduser dev --disabled-password --gecos ""                          && \
     echo "ALL            ALL = (ALL) NOPASSWD: ALL" >> /etc/sudoers     && \
     chown -R dev:dev /home/dev /go
 
-USER dev
+USER 500:500
 ENV HOME /home/dev
 
 # install vim plugins
